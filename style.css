@@ -1,3 +1,33 @@
-body {height: 100vh;width: 100%;overflow: hidden;background-color: black;}
-span {background: url('https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-512.png');position: absolute;pointer-events: none;background-size: contain;animation: animate 6s linear;}
-@keyframes animate {0% {transform: translate(-50%, -50%);opacity: 1;filter: hue-rotate(0);}100% {transform: translate(-50%, -5000%);opacity: 0;filter: hue-rotate(720deg);}}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  cursor: pointer;
+}
+span {
+  background: url('https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-512.png');
+  position: absolute;
+  pointer-events: none;
+  background-size: contain;
+  animation: animate 6s linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+}
